@@ -1,0 +1,17 @@
+{
+    "schemaVersion": 1,
+    "id": "langfiles-plus",
+    "version": "${version}",
+    "name": "Langfiles Plus",
+    "description": "Allows easier creation of language files! Works with owo-lib rich translations and Server Translation API!",
+    "authors": [
+        "jacg311"
+    ],
+    "contact": {},
+    "license": "MIT",
+    "icon": "assets/langfiles_plus/icon.png",
+    "environment": "*",
+    "mixins": [
+        "langfiles-plus.mixins.json"
+    ]
+}
