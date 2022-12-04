@@ -25,6 +25,8 @@ You can use the following format:
 repositories {
     //...
     maven { url 'https://jitpack.io' }
+    // or alternatively
+    maven { url 'https://maven.enjarai.nl/releases' }
 }
 
 dependencies {

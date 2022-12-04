@@ -49,12 +49,24 @@ jar {
 }
 
 publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            from components.java
+    repositories {
+        maven {
+            name = "enjaraiMaven"
+            url = "https://maven.enjarai.nl/releases"
+            credentials(PasswordCredentials)
+            authentication {
+                basic(BasicAuthentication)
+            }
         }
     }
 
-    repositories {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId = project.group
+            artifactId = archivesBaseName
+            version = project.version
+
+            from components.java
+        }
     }
 }
