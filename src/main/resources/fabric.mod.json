@@ -13,5 +13,10 @@
     "environment": "*",
     "mixins": [
         "langfiles-plus.mixins.json"
-    ]
+    ],
+    "custom": {
+        "modmenu": {
+            "badges": [ "library" ]
+        }
+    }
 }
